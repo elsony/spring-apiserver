@@ -12,4 +12,6 @@ RUN ./.s2i/bin/assemble
 
 RUN cp .s2i/bin/run ./entrypoint.sh
 
+EXPOSE 9081
+
 ENTRYPOINT ./entrypoint.sh
